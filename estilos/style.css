@@ -18,7 +18,7 @@ body {
 }
 
 a {
-    color: teal;
+    color: whitesmoke;
     text-decoration: none;
 }
 
@@ -26,14 +26,14 @@ a:hover {
     text-decoration: underline;
 }
 
-.site-subtile,
+
 .site-title {
     color:whitesmoke;
     text-align: center;    
 }
 
 
-.site-subtile {
+.site-subtitle {
     color:whitesmoke;
     font-style: italic;
     text-align: center;
