@@ -43,7 +43,7 @@ header{
 
 .menu ul {
     display: flex; /*deixa o menu na horizontal*/
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .menu li {
