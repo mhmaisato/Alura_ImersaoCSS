@@ -6,23 +6,40 @@
 }
 
 body {
-    background-image: url('https://inteng-storage.s3.amazonaws.com/img/iea/9lwjAVnM6E/sizes/ocde_resize_md.jpg');
-    background-size:auto 100vh; /*vh adapta a altura da tela*/
-    font-family: Arial, Helvetica, sans-serif;
-    height:100vh;
+    background-color: white;
+    height: 100vh;
+    font-family: 'Comfortaa', cursive;  
 }
 
 /*se a tela tiver pelo menos 400px vai carregar estes estilos*/
 @media(min-width:400px){
     body{
-        font-size: 18px;
+        font-size: 16px;
     }
-
+    .contato,
+    .portfolio {
+      padding: 3em 2em 2em;
+      height: 100vh;
+    }
+  
+    .grid {
+      grid-template-columns: 200px 200px;
+      height: calc(100vh - 4.5em - 75px);
+    }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 940px) {
     body {
-        font-size: 22px;
+        font-size: 20px;
+    }
+    .contato,
+    .portfolio {
+      padding: 2em;
+    }
+  
+    .grid {
+      grid-template-columns: repeat(4, 200px);
+      height: calc(100vh - 8em - 75px);
     }
 }
 
@@ -59,27 +76,56 @@ header{
 
 .site-title {
     color: black;
+    text-align: center;
+    font-family: 'Courgette', cursive;
+    font-size: 4em;
+    line-height: 1em;
+    margin-bottom: 20px;
     text-align: center;    
 }
 
 .site-subtitle {
     color: black ;
     font-style: italic;
+    font-family: 'Courgette', cursive;
     font-weight: lighter;
     text-align: center;
     font-size: 2em;
 }
 
-.img-portfolio {
+.contato,
+.portfolio {
+    padding: 1em;
+}
+
+.contato h2,
+.portfolio h2 {
     color: black;
+    font-size: 2em;
+    margin-bottom: .5em;
+}
+
+.grid {
+    color: gray;
+    display: grid;
+    gap: 1em;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.portfolio figcaption {
+    font-weight: bold;
+}
+
+.img-portfolio {
+    border-radius: 10px;
     height: 180px;
+    object-fit: cover;
     width: 180px;
 }
 
-.portfolio {
+.icons a{
     color: black;
-}
-
-.figcaption {
-    color: black;
+    font-size: 6em;
 }
