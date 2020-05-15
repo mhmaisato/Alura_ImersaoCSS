@@ -14,7 +14,7 @@ body {
 /*se a tela tiver pelo menos 400px vai carregar estes estilos*/
 @media(min-width:400px){
     body{
-        font-size: 16px;
+        font-size: 14px;
     }
     .contato,
     .portfolio {
@@ -28,7 +28,22 @@ body {
     }
 }
 
-@media (min-width: 940px) {
+@media (min-width: 600px) {
+    body {
+        font-size: 18px;
+    }
+    .contato,
+    .portfolio {
+      padding: 2em;
+    }
+  
+    .grid {
+      grid-template-columns: repeat(4, 200px);
+      height: calc(100vh - 8em - 75px);
+    }
+}
+
+@media (min-width: 1200px) {
     body {
         font-size: 20px;
     }
@@ -56,6 +71,7 @@ header{
     position: fixed;
     width: 100vw;
     top: 0;
+    z-index: 1;
 }
 
 .menu ul {
@@ -70,9 +86,25 @@ header{
 .menu a {
     color: black;
     display: block;
-    padding: 10px;
+    padding: 10px 20px;
+    transition: background-color 1s, color 1s;
+}
+
+.menu a:active,
+.menu a:hover {
+    background-color: black;
+    color: whitesmoke;
+}
+
+a {
+    color: black;
     text-decoration: none;
 }
+/*
+a:hover {
+    text-decoration: underline; /*underline no texto do menu*
+}*/
+
 
 .site-title {
     color: black;
@@ -93,20 +125,23 @@ header{
     font-size: 2em;
 }
 
-.contato,
-.portfolio {
-    padding: 1em;
+.sobre,
+.portfolio,
+.contato {
+    padding: 2.5em;
+    min-height: 100vh;
 }
 
-.contato h2,
-.portfolio h2 {
+.sobre h2,
+.portfolio h2,
+.contato h2 {
     color: black;
     font-size: 2em;
     margin-bottom: .5em;
 }
 
 .grid {
-    color: gray;
+    color: black;
     display: grid;
     gap: 1em;
     align-content: center;
@@ -114,15 +149,33 @@ header{
     text-align: center;
 }
 
-.portfolio figcaption {
-    font-weight: bold;
+.portfolio figure {
+    text-align: center;
 }
 
 .img-portfolio {
     border-radius: 10px;
     height: 180px;
     object-fit: cover;
-    width: 180px;
+    object-position: left bottom;
+    width: auto;
+}
+/*
+.contato,
+.icons {
+    text-align: center;
+}*/
+
+.contato a {
+    color: black;
+    font-size: 4em;
+    transition: text-shadow 1s;
+}
+
+.contato a:active,
+.contato a:hover {
+    text-decoration: none;
+    text-shadow: 0px 0px 40px yellow;
 }
 
 .icons a{
