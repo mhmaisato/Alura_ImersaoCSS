@@ -21,11 +21,6 @@ body {
       padding: 3em 2em 2em;
       height: 100vh;
     }
-  
-    .grid {
-      grid-template-columns: 200px 200px;
-      height: calc(100vh - 4.5em - 75px);
-    }
 }
 
 @media (min-width: 600px) {
@@ -36,11 +31,6 @@ body {
     .portfolio {
       padding: 2em;
     }
-  
-    .grid {
-      grid-template-columns: repeat(4, 200px);
-      height: calc(100vh - 8em - 75px);
-    }
 }
 
 @media (min-width: 1200px) {
@@ -50,11 +40,6 @@ body {
     .contato,
     .portfolio {
       padding: 2em;
-    }
-  
-    .grid {
-      grid-template-columns: repeat(4, 200px);
-      height: calc(100vh - 8em - 75px);
     }
 }
 
@@ -100,11 +85,6 @@ a {
     color: black;
     text-decoration: none;
 }
-/*
-a:hover {
-    text-decoration: underline; /*underline no texto do menu*
-}*/
-
 
 .site-title {
     color: black;
@@ -140,31 +120,11 @@ a:hover {
     margin-bottom: .5em;
 }
 
-.grid {
-    color: black;
-    display: grid;
-    gap: 1em;
-    align-content: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.portfolio figure {
-    text-align: center;
-}
-
-.img-portfolio {
-    border-radius: 10px;
-    height: 180px;
-    object-fit: cover;
-    object-position: left bottom;
-    width: auto;
-}
-/*
 .contato,
 .icons {
     text-align: center;
-}*/
+  }
+  
 
 .contato a {
     color: black;
@@ -175,7 +135,7 @@ a:hover {
 .contato a:active,
 .contato a:hover {
     text-decoration: none;
-    text-shadow: 0px 0px 40px yellow;
+    text-shadow: 0px 0px 45px red;
 }
 
 .icons a{
@@ -183,8 +143,21 @@ a:hover {
     font-size: 6em;
 }
 
+.sobre p,
+.projetos p {
+    margin-left: 2em;
+    padding: 0.1em;
+}
+
+.lista li {
+    list-style: square;
+    margin-left: 3em;
+    padding: 0.2em;
+}
+
+/*botão voltar ao topo*/
 #subir{
-	position:fixed;
+    position:fixed;
 	bottom:0px;
 	right:0px;
 }
