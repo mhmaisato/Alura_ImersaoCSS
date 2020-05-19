@@ -81,6 +81,16 @@ header{
     color: whitesmoke;
 }
 
+.sobre a:hover {
+    color: navy;
+    text-decoration: underline;
+}
+
+.portfolio a:hover {
+    color: navy;
+    text-decoration: underline;
+}
+
 a {
     color: black;
     text-decoration: none;
@@ -150,7 +160,7 @@ a {
 }
 
 .lista li {
-    list-style: square;
+    list-style: none;
     margin-left: 3em;
     padding: 0.2em;
 }
