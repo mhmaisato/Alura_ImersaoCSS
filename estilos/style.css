@@ -8,7 +8,7 @@
 body {
     background-color: white;
     height: 100vh;
-    font-family: 'Comfortaa', cursive;  
+    font-family: 'Comfortaa', cursive;
 }
 
 /*se a tela tiver pelo menos 400px vai carregar estes estilos*/
@@ -81,14 +81,23 @@ header{
     color: whitesmoke;
 }
 
-.sobre a:hover {
-    color: navy;
-    text-decoration: underline;
+/*configuração da parte sobre*/
+.sobre a {
+    transition: background-color 1s, color 1s;
 }
 
+.sobre a:hover {
+    background-color: black;
+    color: whitesmoke;
+}
+
+/*configuração da parte portfólio*/
+.portfolio a {
+    transition: background-color 1s, color 1s;
+}
 .portfolio a:hover {
-    color: navy;
-    text-decoration: underline;
+    background-color: black;
+    color: whitesmoke;
 }
 
 a {
@@ -134,7 +143,6 @@ a {
 .icons {
     text-align: center;
   }
-  
 
 .contato a {
     color: black;
@@ -144,8 +152,8 @@ a {
 
 .contato a:active,
 .contato a:hover {
-    text-decoration: none;
-    text-shadow: 0px 0px 45px red;
+    background-color: black;
+    color: whitesmoke;
 }
 
 .icons a{
