@@ -8,20 +8,19 @@
   <link rel="stylesheet" href="estilos/bat-cardiaco.css">
 
 </head>
+
 <body>
   <p>Digite a sua idade para saber quantas vezes o seu coração já bateu.
   </p>
   <label for="inputIdade">Digite a sua idade: </label>
-  <input id="inputIdade" type="text">
-  
-  <button id="botaoCalcular" onclick="calcular()">
-    Calcular
-  </button>
+  <input id="inputIdade" type="number" min="0">
+  <button id="botaoCalcular" onclick="calcular()">Calcular</button>
   <br>
   <p id="resultado"></p>
   <script  src="scripts/bat-cardiaco.js"></script>
   <br>
-    
+   
+  <!-- botão voltar portfólio -->
   <div>
     <a href="index.html#portfolio"><i class="fas fa-chevron-left"></i> Voltar</a>
   </div>
