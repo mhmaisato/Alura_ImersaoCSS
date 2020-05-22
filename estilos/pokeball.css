@@ -4,8 +4,9 @@
 	box-sizing: border-box;
 }
 .pokeball {
+	margin: 1em;
 	width: 20px;
-  height: 20px;
+  	height: 20px;
 	box-shadow:
 		/*1a linha*/
 		20px 	0px 	lightgray,
@@ -199,4 +200,14 @@
 		260px 220px lightgray,
 		280px 220px lightgray,
 		300px 220px	lightgray;
+}
+
+a {
+	position: fixed;
+	top: 300px;
+	left: 40px;
+	font-family: 'Comfortaa', cursive;
+    color: black;
+    font-size: 15px;
+    line-height: 1.5em;
 }
