@@ -14,30 +14,31 @@ function trocaparaponto(ponto) {
 function calcular() {
 	var peso = trocaparaponto(inputPeso.value);
 	var altura = trocaparaponto(inputAltura.value);
-	imc_semformat = (peso / (altura * altura));
-	imc = formatanumero(imc_semformat);
+	imc = (peso / (altura * altura));
+	imc2 = formatanumero(imc);
+
 
 	if (imc<=17) {
-		aviso = "Seu IMC está abaixo de 17 - Você está Muito Abaixo do Peso.";
+		aviso = "Seu IMC está abaixo de 17 - Você está Muito Abaixo do Peso."
 	}
 	else if (17 < imc && imc < 18.49) {
-		aviso = "Seu IMC está entre 17 e 18,49 - Você está Abaixo Peso.";
+		aviso = "Seu IMC está entre 17 e 18,49 - Você está Abaixo Peso."
 	}
 	else if (18.5 < imc && imc < 24.99) {
-		aviso = "Seu IMC está entre 18,50 e 24,99 - Você está com Peso Normal.";
+		aviso = "Seu IMC está entre 18,50 e 24,99 - Você está com Peso Normal."
 	}
 	else if (25 < imc && imc < 29.99) {
-		aviso = "Seu IMC está entre 25 e 29,99 - Você está Acima do Peso.";
+		aviso = "Seu IMC está entre 25 e 29,99 - Você está Acima do Peso."
 	}
 	else if (30 < imc && imc < 34.99) {
-		aviso = "Seu IMC está entre 30 e 34,99 - Você está com Obesidade I.";
+		aviso = "Seu IMC está entre 30 e 34,99 - Você está com Obesidade I."
 	}
 	else if (35 < imc && imc < 39.99) {
-		aviso = "Seu IMC está entre 35 e 39,99 - Você está com Obesidade II (Severa).";
+		aviso = "Seu IMC está entre 35 e 39,99 - Você está com Obesidade II (Severa)."
 	}
-	else (imc > 40) {
-		aviso = "Seu IMC está acima de 40 - Você está com Obesidade III (Mórbida).";
+	else if (imc > 40) {
+		aviso = "Seu IMC está acima de 40 - Você está com Obesidade III (Mórbida)."
 	}
 
-	resultado.innerHTML = `Com ${peso}kg e ${altura}m.Seu IMC é: ${imc}.${aviso}`
+	resultado.innerHTML = `Com ${peso}kg e ${altura}m. Seu IMC é: ${imc2}.${aviso}`
 }
