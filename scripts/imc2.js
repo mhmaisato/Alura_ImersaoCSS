@@ -16,6 +16,8 @@ function calcular() {
 	var altura = trocaparaponto(inputAltura.value);
 	imc = (peso / (altura * altura));
 	imc2 = formatanumero(imc);
+	peso2 = trocaparavirgula(peso);
+	altura2 = trocaparavirgula(altura);
 
 
 	if (imc<=17) {
@@ -40,5 +42,6 @@ function calcular() {
 		aviso = "Seu IMC está acima de 40 - Você está com Obesidade III (Mórbida)."
 	}
 
-	resultado.innerHTML = `Com ${peso}kg e ${altura}m. Seu IMC é: ${imc2}.${aviso}`
+	resultado.innerHTML = `Com ${peso2}kg e ${altura2}m, seu IMC é de: ${imc2}.`
+	resultado2.innerHTML =`${aviso}`
 }
